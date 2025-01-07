@@ -15,35 +15,51 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<main>
 			<h1>Creating immersive in-flight exploration application</h1>
 			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
+				Have you ever sat by the airplane window, gazing down at the breathtaking landscapes below, and wondered: What exactly am I flying over? If so, you're not alone. The idea for my latest project stems from this exact curiosity and the desire to create an engaging, offline tool for in-flight exploration. Let me introduce my new project: an immersive in-flight exploration application designed for travelers who want to uncover the hidden stories of the world below.
 			</p>
+			<h2>What is the App About?</h2>
 			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
+				This app bridges the gap between travel curiosity and accessibility, even when you're offline. It's a cross-platform mobile application built using Ionic, which will allow passengers to explore their flight paths, uncover landmarks, and track their journeys, all from the comfort of airplane mode.
 			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
+			<h2>How Does It Work?</h2>
 			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
+				<li>
+					<h3>Add Your Flight:</h3>
+					<p>
+						Enter your flight number (e.g., LO784) and date manually or import your flight directly from your digital wallet (Google or Apple Wallet).
+					</p>
+					<p>
+						The app fetches flight details, including departure and arrival times, route data, and even potential delays before you switch to airplane mode.
+					</p>
+				</li>
+				<li>
+					<h3>Pre-Fetch Data:</h3>
+					<p>
+						Using public APIs, the app gathers information about your route, including historical flight trajectories and landmarks along the way.
+					</p>
+					<p>
+						Landmarks, cities, and natural features are preloaded to ensure everything works seamlessly offline.
+					</p>
+				</li>
+				<li>
+					<h3>Flight Mode:</h3>
+					<p>
+						Once in airplane mode, the app uses pre-fetched data to display your current position along the flight route on a beautifully designed map.
+					</p>
+					<p>
+						Real-time estimations let you know what’s below you, from famous landmarks to nearby cities, even without a Wi-Fi connection.
+					</p>
+				</li>
+				<li>
+					<h3>Post-Flight Exploration:</h3>
+					<p>
+						After the flight, the app provides a summary of your journey, including landmarks you “visited” and the total distance flown.
+					</p>
+					<p>
+						It also saves your flight for future reference or sharing with friends.
+					</p>
+				</li>
 			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
 		</main>
 		<Footer />
 	</body>
