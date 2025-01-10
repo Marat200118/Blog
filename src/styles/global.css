@@ -30,7 +30,7 @@
 	font-display: swap;
 }
 body {
-	font-family: 'Inter', sans-serif;
+	font-family: 'Manrope', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -59,16 +59,16 @@ h6 {
 	line-height: 1.2;
 }
 h1 {
-	font-size: 3.052em;
+	font-size: clamp(2.4em, 5vw, 2.7em);
 }
 h2 {
-	font-size: 2.441em;
+	font-size: clamp(1.8em, 5vw, 2.0em);
 }
 h3 {
-	font-size: 1.953em;
+	font-size: clamp(1.5em, 5vw, 1.6em);
 }
 h4 {
-	font-size: 1.563em;
+	font-size: clamp(1.3em, 5vw, 1.4em);
 }
 h5 {
 	font-size: 1.25em;
@@ -151,4 +151,14 @@ hr {
 	clip-path: inset(50%);
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.side-title {
+	color: gray;
 }
