@@ -2,7 +2,7 @@
 title: 'Aviation API Exploration'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jan 09 2025'
-heroImage: '/opensky-placeholder.png'
+heroImage: '/blog-placeholder-api.png'
 ---
 
 The core idea behind my app is to help users explore what they’re flying over—landmarks, cities, or natural features—all while offline. To do this, I needed to dive into the world of APIs to figure out how to get the data I need.
