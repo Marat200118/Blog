@@ -13,61 +13,6 @@ At this time the flight page is not completed yet, but the core functionality is
 ```typescript
 // tab2.page.ts
 
-import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular';
-import { StorageService } from '../services/storage.service';
-import { Flight } from '../models/flight.model';
-import { CommonModule, DatePipe } from '@angular/common';
-
-import { LiveFlightPathMapComponent } from '../components/live-flight-map/live-flight-map.component';
-import {
-  IonButton,
-  IonButtons,
-  IonContent,
-  IonInput,
-  IonItem,
-  IonModal,
-  IonIcon,
-  IonImg,
-  IonHeader,
-  IonTitle,
-  IonToolbar,
-  IonCard,
-  IonCardHeader,
-  IonCardTitle,
-  IonList,
-  IonCardContent,
-  IonDatetime,
-} from '@ionic/angular/standalone';
-
-@Component({
-  selector: 'app-tab2',
-  templateUrl: 'tab2.page.html',
-  styleUrls: ['tab2.page.scss'],
-  standalone: true,
-  providers: [DatePipe],
-  imports: [
-    CommonModule,
-    LiveFlightPathMapComponent,
-    IonButton,
-    IonCard,
-    IonList,
-    IonCardHeader,
-    IonCardContent,
-    IonCardTitle,
-    IonButtons,
-    IonContent,
-    IonHeader,
-    IonInput,
-    IonItem,
-    IonTitle,
-    IonModal,
-    IonIcon,
-    IonImg,
-    IonToolbar,
-    IonDatetime,
-  ],
-})
 export class Tab2Page implements OnInit {
   flight: Flight | null = null; 
   flightPath: { latitude: number; longitude: number, timestamp: number }[] = [];

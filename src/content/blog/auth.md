@@ -192,61 +192,6 @@ To show the user profile, I used the new page called `tab3.page.ts`. In this pag
 ```typescript
 //tab3.page.ts
 
-import { Component, OnInit } from '@angular/core';
-import { ExploreContainerComponent } from '../explore-container/explore-container.component';
-import { CommonModule } from '@angular/common';
-import { SupabaseService, Profile } from '../services/supabase.service';
-import { FormsModule } from '@angular/forms';
-
-import {
-  IonContent,
-  IonHeader,
-  IonTitle,
-  IonToolbar,
-  IonButtons,
-  IonBackButton,
-  IonCard,
-  IonRow,
-  IonCol,
-  IonGrid,
-  IonCardHeader,
-  IonCardTitle,
-  IonCardContent,
-  IonIcon,
-  IonItem,
-  IonLabel,
-  IonInput,
-  IonButton,
-} from '@ionic/angular/standalone';
-
-@Component({
-  selector: 'app-tab3',
-  templateUrl: 'tab3.page.html',
-  styleUrls: ['tab3.page.scss'],
-  standalone: true,
-  imports: [
-      IonContent,
-      IonHeader,
-      IonTitle,
-      IonToolbar,
-      FormsModule,
-      IonButtons,
-      IonGrid,
-      IonCol,
-      IonRow,
-      IonBackButton,
-      IonCard,
-      IonIcon,
-      IonCardHeader,
-      IonCardTitle,
-      IonCardContent,
-      IonItem,
-      IonLabel,
-      IonInput,
-      IonButton,
-      CommonModule,
-    ],
-})
 export class Tab3Page implements OnInit {
   profile: Profile = {
     username: '',
@@ -288,63 +233,6 @@ To handle the login and sign up form, I used the new page called `login.page.ts`
 ```typescript
 //login.page.ts
 
-import { Component } from '@angular/core';
-import { NavController } from '@ionic/angular';
-import { SupabaseService } from '../../services/supabase.service';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { 
-  IonContent,
-  IonHeader,
-  IonTitle,
-  IonToolbar,
-  IonButtons,
-  IonBackButton,
-  IonCard,
-  IonRow,
-  IonCol,
-  IonGrid,
-  IonCardHeader,
-  IonCardTitle,
-  IonCardContent,
-  IonIcon,
-  IonItem,
-  IonLabel,
-  IonInput,
-  IonButton,
-} from '@ionic/angular/standalone';
-
-@Component({
-  selector: 'app-login',
-  standalone: true,
-  templateUrl: './login.page.html',
-  styleUrls: ['./login.page.scss'],
-  imports: [
-    IonContent,
-    IonHeader,
-    IonTitle,
-    IonToolbar,
-    IonButtons,
-    IonGrid,
-    IonCol,
-    IonRow,
-    IonBackButton,
-    FormsModule,
-    IonCard,
-    IonIcon,
-    IonCardHeader,
-    IonCardTitle,
-    IonCardContent,
-    IonItem,
-    IonLabel,
-    IonInput,
-    IonButton,
-
-  ],
-  // schemas: [
-  //   CUSTOM_ELEMENTS_SCHEMA,
-  // ]
-})
 export class LoginPage {
   email = '';
   password = '';
@@ -386,62 +274,6 @@ export class LoginPage {
 ```typescript
 //signup.page.ts
 
-import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { NavController } from '@ionic/angular';
-import { SupabaseService } from '../../services/supabase.service';
-import {
-  IonContent,
-  IonHeader,
-  IonTitle,
-  IonToolbar,
-  IonButtons,
-  IonBackButton,
-  IonCard,
-  IonRow,
-  IonCol,
-  IonGrid,
-  IonCardHeader,
-  IonCardTitle,
-  IonAvatar,
-  IonCardContent,
-  IonIcon,
-  IonItem,
-  IonLabel,
-  IonInput,
-  IonButton,
-} from '@ionic/angular/standalone';
-import { FormsModule } from '@angular/forms';
-
-
-@Component({
-  selector: 'app-signup',
-  standalone: true,
-  templateUrl: './signup.page.html',
-  styleUrls: ['./signup.page.scss'],
-  imports: [
-    IonContent,
-    IonHeader,
-    IonTitle,
-    IonToolbar,
-    IonButtons,
-    IonGrid,
-    IonCol,
-    IonAvatar,
-    IonRow,
-    IonBackButton,
-    IonCard,
-    IonIcon,
-    IonCardHeader,
-    IonCardTitle,
-    IonCardContent,
-    IonItem,
-    IonLabel,
-    IonInput,
-    IonButton,
-    FormsModule,
-  ],
-})
 export class SignupPage {
   email = '';
   password = '';
